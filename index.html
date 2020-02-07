@@ -40,11 +40,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background: black; padding-bottom: -10px;">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Vels Infoway</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" id="close-div" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive1">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#techzacademy">TechZ Academy</a>
@@ -170,7 +170,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Industrial Training</p>
+                    <p>The main objective of this training is to give exposure to the actual working environment to the students so that their knowledge and skills will be greatly enhanced and they’ll be able to satisfy the expected workforce.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -208,7 +208,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Project Guidance</p>
+                    <p>We are a team of experienced engineers who put our industrial experience together which helps the enthusiastic next generation developers to achieve their dream project possible and fruitful.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -229,7 +229,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Career Guidance</p>
+                    <p>Techz takes adequate steps in identifying the current demands of the industry and helps students to fill the gap between their academic and current trends which makes them more employable and to attain their career goals.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -267,7 +267,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <p>Placement Guidance</p>
+                    <p>Techz academy offers placement guidance and assistance for the students to attain their dream job. We also provide awareness on higher studies and self- employment opportunities.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1191,34 +1191,6 @@
         </div>
     </section>
 
-    <!-- Clients -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact -->
     <section class="page-section" id="contact">
         <div class="container">
@@ -1339,7 +1311,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <!-- <script src="js/agency.min.js"></script> -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1379,8 +1351,13 @@
             }
         }
     </script>
-
-
+    <script>
+        $(document).ready(function() {
+            $("#close-div").click(function() {
+                $("#navbarResponsive1").toggle();
+            })
+        })
+    </script>
 </body>
 
 </html>
